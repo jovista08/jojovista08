@@ -1,0 +1,149 @@
+/* Style général */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h3 {
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin-top: 50px;
+}
+
+/* Style pour les onglets */
+.nav-tabs {
+    border-radius: 5px;
+}
+
+.nav-tabs .nav-item {
+    margin-right: 10px;
+}
+
+.nav-tabs .nav-link {
+    padding: 10px 20px;
+    color: #007bff;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.nav-tabs .nav-link.active {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+/* Contenu de l'onglet */
+.tab-content {
+    margin-top: 20px;
+}
+
+.order-item {
+    padding: 15px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.order-item p {
+    margin: 5px 0;
+}
+
+.btn {
+    margin-right: 10px;
+    padding: 5px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: #fff;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    color: #fff;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Section historique */
+#history .order-item {
+    margin-top: 20px;
+}
+
+/* Adaptation pour les petits écrans */
+@media (max-width: 767px) {
+    .container {
+        padding: 20px;
+    }
+
+    .tab-pane {
+        padding: 15px;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .btn-primary,
+    .btn-success {
+        font-size: 1.1rem;
+        width: 100%;
+    }
+}
+
+/* Style du footer */
+.footer {
+    background-color: rgba(180, 239, 227, 0.238); /* Fond transparent sombre */
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Footer */
+.footer p {
+    margin: 5px 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* Liens dans le footer */
+.footer a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #000000; /* Changer la couleur au survol */
+    text-decoration: underline;
+}
+
+/* Ajouter un effet visuel de ligne sous les liens */
+.footer a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: linear-gradient(to right, #28a745,  #17a2b8);
+    transition: width 0.4s ease-in-out;
+}
+
+.footer a:hover::after {
+    width: 100%; /* La ligne se déploie au survol */
+}

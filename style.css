@@ -1,0 +1,221 @@
+/* Style général */
+body {
+    font-family: 'burger deluxe', sans-serif;
+    background-color: #5d5c5c;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../media/image/rag.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(8px);
+    z-index: -2;
+    background-attachment: fixed;
+    background-position: bottom right;
+
+}
+/* teinte miel */
+body::after{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 193, 7, 0,3);
+    z-index: -1;
+
+}
+  
+/* Boîte de connexion */
+.login-box {
+    font-family: 'lobster',Helvetica, sans-serif;
+    width: 350px;
+    padding: 20px;
+    margin: 100px auto;
+    background: rgba(255, 255, 255, 0.2); /* Transparence */
+    border-radius: 15px; /* Coins arrondis */
+    backdrop-filter: blur(10px); /* Effet verre */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Ombre douce */
+    text-align: center;
+    color: #fff; 
+}
+
+/* Titre */
+.login-box h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #000000ec;
+}
+
+/* Champs de formulaire */
+.login-box input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.5); /* Fond semi-transparent */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+}
+
+.login-box input::placeholder {
+    color: #757575; /* Couleur des placeholders */
+}
+
+/* Bouton */
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background: #cfa481;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    color: #000000;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-box button:hover {
+    background: #ff7300; 
+    color: #ffffff;
+}
+
+/* Style pour le menu */
+ul.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #cfa481; /* Fond sombre */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+ul.nav .name {
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #dffeff; /* Couleur cyan pour l'effet tech */
+    transition: transform 0.3s, color 0.3s;
+}
+
+/* Effet de survol */
+ul.nav .name:hover {
+    transform: scale(1.1); /* Agrandit le texte au survol */
+    color: #7f1d3a; /* Changement de couleur au survol */
+    cursor: pointer;
+}
+
+/* Ajout d'un effet visuel pour une ambiance tech */
+ul.nav .name::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(to right, #a4bdbd, #7f1d3a);
+    transform: scaleX(0);
+    transition: transform 0.4s ease-in-out;
+}
+
+ul.nav .name:hover::after {
+    transform: scaleX(1); /* Effet de ligne de sous-titre au survol */
+}
+ul.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(134, 88, 56, 0.7); /* Fond sombre et transparent (70% opaque) */
+    backdrop-filter: blur(10px); /* Optionnel : flou du fond derrière la navbar */
+    box-shadow: 0 4px 10px rgba(49, 49, 49, 0.2);
+    position: fixed; /* Pour maintenir la navbar en haut de la page */
+    width: 100%; /* S'assurer que la navbar couvre toute la largeur */
+    top: 0;
+    z-index: 1000; /* Pour qu'elle reste au-dessus des autres éléments */
+    }
+
+/* Style du footer */
+.footer {
+    background-color: rgba(30, 30, 30, 0.8); /* Fond transparent sombre */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px); /* Flou du fond derrière le footer (optionnel) */
+}
+
+/* Footer */
+.footer p {
+    margin: 5px 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* Liens dans le footer */
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #ffffff; /* Changer la couleur au survol */
+    text-decoration: underline;
+}
+
+/* Ajouter un effet visuel de ligne sous les liens */
+.footer a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: linear-gradient(to right, #a4bdbd,  #7f1d3a);
+    transition: width 0.4s ease-in-out;
+}
+
+.footer a:hover::after {
+    width: 100%; /* La ligne se déploie au survol */
+}
+
+/* Adaptation pour les petits écrans */
+@media (max-width: 767px) {
+    .container {
+        padding: 20px;
+    }
+
+    .tab-pane {
+        padding: 15px;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .btn-primary,
+    .btn-success {
+        font-size: 1.1rem;
+        width: 100%;
+    }
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Restaurant</title>
+    <link rel="stylesheet" href="../css/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/stylemenu.css">
+    <style>
+        /* Ajout de styles supplémentaires pour le panier */
+        .cart {
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-top: 30px;
+        }
+        .cart h4 {
+            margin-bottom: 20px;
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+        }
+
+        /* Style pour les boutons */
+        .btn-custom {
+            background-color: #f39c12;
+            color: white;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+        }
+        .btn-custom:hover {
+            background-color: #e67e22;
+        }
+
+        /* Navbar personnalisée */
+        .navbar {
+            background-color: #2c3e50;
+        }
+        .navbar .navbar-brand {
+            color: white;
+        }
+        .navbar .navbar-nav .nav-link {
+            color: white;
+            font-size: 1.1rem;
+        }
+        .navbar .navbar-nav .nav-link:hover {
+            color: #f39c12;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar avec le nom du restaurant et les onglets de menu -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand restaurant-name" href="#">Le Gourmet</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" id="breakfast-tab" href="#breakfast">Petit Déjeuner</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="lunch-tab" href="#lunch">Déjeuner</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="dinner-tab" href="#dinner">Dîner</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>        
+
+        <!-- Onglets de contenu des menus -->
+        <div class="tab-content mt-4">
+            <!-- Onglet Petit Déjeuner -->
+            <div class="tab-pane fade show active" id="breakfast">
+                <h3>Menu Petit Déjeuner</h3>
+                <form id="breakfast-form">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Croissant au beurre" id="croissant" />
+                        <label class="form-check-label" for="croissant">Croissant au beurre</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Omelette avec légumes" id="omelette" />
+                        <label class="form-check-label" for="omelette">Omelette avec légumes</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Café ou Thé" id="cafe-the" />
+                        <label class="form-check-label" for="cafe-the">Café ou Thé</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Jus d'orange frais" id="jus" />
+                        <label class="form-check-label" for="jus">Jus d'orange frais</label>
+                    </div>
+                    <button type="button" class="btn btn-custom">Ajouter au Panier</button>
+                </form>
+            </div>
+
+            <!-- Onglet Déjeuner -->
+            <div class="tab-pane fade" id="lunch">
+                <h3>Menu Déjeuner</h3>
+                <form id="lunch-form">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Salade César" id="salade-cesar" />
+                        <label class="form-check-label" for="salade-cesar">Salade César</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Grilled Chicken Sandwich" id="chicken-sandwich" />
+                        <label class="form-check-label" for="chicken-sandwich">Grilled Chicken Sandwich</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Riz sauté aux légumes" id="riz-sauté" />
+                        <label class="form-check-label" for="riz-sauté">Riz sauté aux légumes</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Boisson gazeuse" id="boisson" />
+                        <label class="form-check-label" for="boisson">Boisson gazeuse</label>
+                    </div>
+                    <button type="button" class="btn btn-custom">Ajouter au Panier</button>
+                </form>
+            </div>
+
+            <!-- Onglet Dîner -->
+            <div class="tab-pane fade" id="dinner">
+                <h3>Menu Dîner</h3>
+                <form id="dinner-form">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Filet de saumon grillé" id="saumon" />
+                        <label class="form-check-label" for="saumon">Filet de saumon grillé</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Purée de pommes de terre" id="puree" />
+                        <label class="form-check-label" for="puree">Purée de pommes de terre</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Asperges sautées" id="asperges" />
+                        <label class="form-check-label" for="asperges">Asperges sautées</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Vin blanc ou rouge" id="vin" />
+                        <label class="form-check-label" for="vin">Vin blanc ou rouge</label>
+                    </div>
+                    <button type="button" class="btn btn-custom">Ajouter au Panier</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Panier -->
+        <div class="cart">
+            <h4>Mon Panier</h4>
+            <div id="cart-items">
+                <!-- Les articles ajoutés au panier s'afficheront ici -->
+            </div>
+            <button class="btn btn-success" id="checkout-btn">Valider la Commande</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 BINNOV TECH. Tous droits réservés.</p>
+            <p><a href="#">Politique de confidentialité</a> <a href="#">Termes et conditions</a></p>
+        </div>
+      </footer>
+</body>

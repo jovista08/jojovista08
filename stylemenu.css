@@ -1,0 +1,256 @@
+/* Style de base */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../media/image/bla.jpg');
+    background-size: cover;
+    position: relative;
+    color: #000000;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond sombre transparent */
+    backdrop-filter: blur(8px); /* Flou */
+    z-index: -1;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent pour un effet moderne */
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff !important;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-nav {
+    gap: 20px;
+}
+
+.nav-link {
+    color: #ddd !important;
+    font-size: 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #fff !important;
+    transform: scale(1.1); /* Légère animation de zoom au survol */
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: #f8f9fa !important;
+    text-decoration: underline;
+}
+
+/* Conteneur principal transparent */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.2); /* Fond semi-transparent */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombre subtile */
+    backdrop-filter: blur(8px); /* Effet de flou */
+    -webkit-backdrop-filter: blur(8px); /* Compatibilité Safari */
+    border: 0.5px solid rgba(255, 255, 255, 0); /* Bordure subtile pour délimiter */
+}
+
+/* Texte à l'intérieur pour lisibilité */
+.container h1, 
+.container h2, 
+.container h3, 
+.container p {
+    color: #333; /* Texte en gris foncé pour contraste */
+}
+
+/* Boutons dans le conteneur */
+.container .btn {
+    margin-top: 20px;
+}
+
+/* Onglet Menu */
+.tab-content {
+    margin-top: 30px;
+}
+
+.tab-pane {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fond semi-transparent pour chaque onglet */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    backdrop-filter: blur(6px); /* Flou subtil derrière chaque onglet */
+}
+
+
+/* Formulaire de sélection */
+.form-check {
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.form-check-input {
+    margin-right: 10px;
+}
+
+/* Effet sur les boutons */
+.btn-primary, 
+.btn-success {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-success:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Panier */
+.cart {
+    background: rgba(255, 255, 255, 0.9); /* Fond semi-transparent */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.cart h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item strong {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.cart button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border-color: #28a745;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cart button:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+    transform: scale(1.05);
+}
+
+/* Style général pour le texte */
+h3 {
+    font-size: 1.8rem;
+    color: #343a40; /* Couleur élégante et lisible */
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1rem;
+    color: #555; /* Gris pour les textes explicatifs */
+}
+
+
+/* Adaptation pour les petits écrans */
+@media (max-width: 767px) {
+    .container {
+        padding: 20px;
+    }
+
+    .tab-pane {
+        padding: 15px;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .btn-primary,
+    .btn-success {
+        font-size: 1.1rem;
+        width: 100%;
+    }
+}
+
+/* Style du footer */
+.footer {
+
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+/* Footer */
+.footer p {
+    margin: 5px 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* Liens dans le footer */
+.footer a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #fffbfb; /* Changer la couleur au survol */
+    text-decoration: underline;
+}
+
+/* Ajouter un effet visuel de ligne sous les liens */
+.footer a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    transition: width 0.4s ease-in-out;
+}
+
+.footer a:hover::after {
+    width: 100%; /* La ligne se déploie au survol */
+}
