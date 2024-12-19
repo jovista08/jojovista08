@@ -13,7 +13,7 @@
         <!-- Navbar avec le nom du restaurant et les onglets de menu -->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand restaurant-name" href="#">binnov tech</a>
+                <a class="navbar-brand restaurant-name" href="#">SMART FOOD</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -34,79 +34,144 @@
         </nav>        
 
         <!-- Onglets de contenu des menus -->
-        <div class="tab-content mt-4">
-            <!-- Onglet Petit Déjeuner -->
-            <div class="tab-pane fade show active" id="breakfast">
-                <h3>Menu Petit Déjeuner</h3>
-                <form id="breakfast-form">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Croissant au beurre" id="croissant" />
-                        <label class="form-check-label" for="croissant">Croissant au beurre</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Omelette avec légumes" id="omelette" />
-                        <label class="form-check-label" for="omelette">Omelette avec légumes</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Café ou Thé" id="cafe-the" />
-                        <label class="form-check-label" for="cafe-the">Café ou Thé</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Jus d'orange frais" id="jus" />
-                        <label class="form-check-label" for="jus">Jus d'orange frais</label>
-                    </div>
-                    <button type="button" class="btn btn-custom">Ajouter au Panier</button>
-                </form>
-            </div>
-
-            <!-- Onglet Déjeuner -->
-            <div class="tab-pane fade" id="lunch">
-                <h3>Menu Déjeuner</h3>
-                <form id="lunch-form">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Salade César" id="salade-cesar" />
-                        <label class="form-check-label" for="salade-cesar">Salade César</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Grilled Chicken Sandwich" id="chicken-sandwich" />
-                        <label class="form-check-label" for="chicken-sandwich">Grilled Chicken Sandwich</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Riz sauté aux légumes" id="riz-sauté" />
-                        <label class="form-check-label" for="riz-sauté">Riz sauté aux légumes</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Boisson gazeuse" id="boisson" />
-                        <label class="form-check-label" for="boisson">Boisson gazeuse</label>
-                    </div>
-                    <button type="button" class="btn btn-custom">Ajouter au Panier</button>
-                </form>
-            </div>
-
-            <!-- Onglet Dîner -->
-            <div class="tab-pane fade" id="dinner">
-                <h3>Menu Dîner</h3>
-                <form id="dinner-form">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Filet de saumon grillé" id="saumon" />
-                        <label class="form-check-label" for="saumon">Filet de saumon grillé</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Purée de pommes de terre" id="puree" />
-                        <label class="form-check-label" for="puree">Purée de pommes de terre</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Asperges sautées" id="asperges" />
-                        <label class="form-check-label" for="asperges">Asperges sautées</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Vin blanc ou rouge" id="vin" />
-                        <label class="form-check-label" for="vin">Vin blanc ou rouge</label>
-                    </div>
-                    <button type="button" class="btn btn-custom">Ajouter au Panier</button>
-                </form>
+       <!-- Section du menu -->
+<div class="container py-5">
+    <h2 class="text-center mb-4">Menu</h2>
+    <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+                <img src="../media\image\alloco.jpg" class="card-img-top" alt="Plat 1">
+                <div class="card-body">
+                    <h5 class="card-title">Alloco</h5>
+                    <p class="card-text">Description courte du plat 1.</p>
+                    <a href="#" class="btn btn-primary">Commander</a>
+                </div>
             </div>
         </div>
+        <!-- Card 2 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+                <img src="../media\image\frites.jpg" class="card-img-top" alt="Plat 2">
+                <div class="card-body">
+                    <h5 class="card-title">Frite</h5>
+                    <p class="card-text">Description courte du plat 2.</p>
+                    <a href="#" class="btn btn-primary">Commander</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+                <img src="../media\image\choukouya.jpg" class="card-img-top" alt="Plat 3">
+                <div class="card-body">
+                    <h5 class="card-title">choukouya</h5>
+                    <p class="card-text">Description courte du plat 3.</p>
+                    <a href="#" class="btn btn-primary">Commander</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+                <img src="../media\image\pain brochette.jpg" class="card-img-top" alt="Plat 4">
+                <div class="card-body">
+                    <h5 class="card-title">pain brochettes</h5>
+                    <p class="card-text">Description courte du plat 4.</p>
+                    <a href="#" class="btn btn-primary">Commander</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+                <img src="../media\image\tchêp.jpg" class="card-img-top" alt="Plat 5">
+                <div class="card-body">
+                    <h5 class="card-title">tchêpe</h5>
+                    <p class="card-text">Description courte du plat 5.</p>
+                    <a href="#" class="btn btn-primary">Commander</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+                <img src="../media\image\soupe de cabris.jpg" class="card-img-top" alt="Plat 6">
+                <div class="card-body">
+                    <h5 class="card-title">soupe de cabris</h5>
+                    <p class="card-text">Description courte du plat 6.</p>
+                    <a href="#" class="btn btn-primary">Commander</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 7 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+                <img src="../media\image\sauce pistache.jpg" class="card-img-top" alt="Plat 7">
+                <div class="card-body">
+                    <h5 class="card-title">sauce pistache</h5>
+                    <p class="card-text">Description courte du plat 7.</p>
+                    <a href="#" class="btn btn-primary">Commander</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 8 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+                <img src="../media\image\porc au four.jpg" class="card-img-top" alt="Plat 8">
+                <div class="card-body">
+                    <h5 class="card-title">porc au four</h5>
+                    <p class="card-text">Description courte du plat 8.</p>
+                    <a href="#" class="btn btn-primary">Commander</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 9 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+                <img src="../media\image\sauce graine.jpg" class="card-img-top" alt="Plat 9">
+                <div class="card-body">
+                    <h5 class="card-title">sauce graine</h5>
+                    <p class="card-text">Description courte du plat 9.</p>
+                    <a href="#" class="btn btn-primary">Commander</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 10 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+                <img src="../media\image\placali.jpg" class="card-img-top" alt="Plat 10">
+                <div class="card-body">
+                    <h5 class="card-title">placali</h5>
+                    <p class="card-text">Description courte du plat 10.</p>
+                    <a href="#" class="btn btn-primary">Commander</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 11 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+                <img src="../media\image\patate grillé.jpg" class="card-img-top" alt="Plat 11">
+                <div class="card-body">
+                    <h5 class="card-title">patates grillées</h5>
+                    <p class="card-text">Description courte du plat 11.</p>
+                    <a href="#" class="btn btn-primary">Commander</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 12 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+                <img src="../media\image\garba.jpg" class="card-img-top" alt="Plat 12">
+                <div class="card-body">
+                    <h5 class="card-title">garba</h5>
+                    <p class="card-text">Description courte du plat 12.</p>
+                    <a href="#" class="btn btn-primary">Commander</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
         <!-- Panier -->
         <div class="cart">
@@ -119,7 +184,7 @@
     </div>
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 BINNOV TECH. Tous droits réservés.</p>
+            <p id="foot">&copy; 2024 BINNOV TECH. Tous droits réservés.</p>
             <p><a href="#">Politique de confidentialité</a> <a href="#">Termes et conditions</a></p>
         </div>
       </footer>
